@@ -7,6 +7,8 @@ RUN rm -rf /var/www/html
 
 ADD nginx.conf /etc/nginx/nginx.conf
 
+ADD hhvm.conf /etc/nginx/hhvm.conf
+
 ADD default /etc/nginx/sites-available/default
 
 RUN adduser www-data www-data
